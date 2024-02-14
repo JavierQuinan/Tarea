@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar Datos PHP</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #f0f0f0; 
+        }
+
+        .container {
+            background-color: #ffffff; 
+
+            
+            color: #333333; 
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff; 
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; 
+            border-color: #0056b3; 
+        }
+    </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center" style="height: 100vh">
+
+    <div class="container rounded shadow p-4 col-xl-4 col-lg-6">
+
+        <h2 class="w-100 text-center mb-4">Registro de usuarios</h2>
+
+        <hr style="background-color: #999999;" />
+
+        <form id="formulario" method="POST" action="ingresar.php">
+            <div class="mb-3">
+                <label for="txt_usuario" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="txt_usuario" name="txt_usuario" placeholder="Ingrese el usuario" required="">
+            </div>
+            <div class="mb-3">
+                <label for="txt_nombre_apellido" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="txt_nombre_apellido" name="txt_nombre_apellido" placeholder="Ingrese el nombre" required="">
+            </div>
+            <div class="mb-3">
+                <label for="int_edad" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="int_edad" name="int_edad" placeholder="Ingrese la edad" required="">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Insertar</button>
+        </form>
+        
+    </div>
+
+    <script src="registro.js"></script>
+
+</body>
+</html>
